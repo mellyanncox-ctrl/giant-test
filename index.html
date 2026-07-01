@@ -219,6 +219,9 @@ section{position:relative}
 footer{border-top:1px solid rgba(36,31,27,.12);padding:clamp(2.5rem,5vw,4rem) var(--pad);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2rem}
 footer .fmark{width:clamp(150px,18vw,220px)}
 footer .finfo{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;line-height:1.9;color:rgba(36,31,27,.8);font-weight:500}
+footer .credit{flex-basis:100%;margin-top:clamp(1.6rem,3vw,2.6rem);padding-top:1.2rem;border-top:1px solid rgba(36,31,27,.08);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(36,31,27,.5);font-weight:500}
+footer .credit a{color:rgba(36,31,27,.72);border-bottom:1px solid rgba(36,31,27,.28);padding-bottom:1px;transition:color .3s}
+footer .credit a:hover{color:var(--green)}
 
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
 .reveal.in{opacity:1;transform:none}
@@ -548,6 +551,7 @@ footer .finfo{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;line
     Mon &ndash; Fri 7am &ndash; 2pm &nbsp;&middot;&nbsp; Sat &ndash; Sun 9am &ndash; 2pm &nbsp;&middot;&nbsp; Closed public holidays
   </div>
   <a href="https://www.instagram.com/giantcoffee.au" target="_blank" rel="noopener" class="btn btn--green">Instagram <span class="arr">&rarr;</span></a>
+  <p class="credit">Website by <a href="https://theserviceedit.com" target="_blank" rel="noopener">The Service Edit</a></p>
 </footer>
 
 <script>
