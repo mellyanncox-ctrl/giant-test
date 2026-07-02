@@ -87,8 +87,9 @@ section{position:relative}
 /* SPANNERS image section */
 .spanners3{padding:clamp(3rem,7vw,7rem) var(--pad);text-align:center;background:var(--cream)}
 .spanners3 .eyebrow{margin-bottom:1.6rem}
-.s3-img{width:100%;max-width:1080px;margin:0 auto;display:block;height:auto;filter:drop-shadow(0 24px 40px rgba(36,31,27,.16))}
-.s3-cap{margin-top:1.6rem;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.1rem,2.6vw,1.9rem);color:var(--green)}
+.s3-img{width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);display:block;height:auto;object-fit:cover;object-position:center;border-radius:0;filter:none}
+@media(min-width:721px){.s3-img{height:clamp(420px,58vh,640px)}}
+.s3-cap{margin-top:clamp(1.6rem,3vw,2.4rem);font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.1rem,2.6vw,1.9rem);color:var(--green)}
 .m-spanners-img{text-align:center;margin:clamp(2.2rem,5vw,3.5rem) 0}
 /* SPANNER SHOWCASE */
 .showcase{padding:clamp(3.5rem,7vw,7rem) var(--pad);display:grid;grid-template-columns:.9fr 1.2fr auto;gap:clamp(1.5rem,4vw,4rem);align-items:center}
