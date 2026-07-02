@@ -348,9 +348,22 @@ footer .credit a:hover{color:var(--green)}
 
 /* HOUSE POUR (added) */
 .house-pour{display:flex;align-items:center;gap:.8rem 1.1rem;flex-wrap:wrap;margin-top:clamp(1.8rem,3.5vw,2.8rem);padding-top:1.5rem;border-top:1px solid rgba(36,31,27,.16)}
-.house-pour .hp-tag{font-family:var(--body);font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);background:var(--green);padding:.5rem .95rem;border-radius:999px;white-space:nowrap;flex:none}
+.house-pour .hp-tag,.house-feature .hp-tag{font-family:var(--body);font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);background:var(--green);padding:.5rem .95rem;border-radius:999px;white-space:nowrap;flex:none}
 .house-pour .hp-txt{font-size:clamp(.95rem,1.5vw,1.18rem);line-height:1.5;color:rgba(36,31,27,.85);max-width:60ch}
 .house-pour .hp-txt strong{font-weight:700;color:var(--espresso)}
+/* HOUSE FEATURE (pink card) */
+.house-feature{display:grid;grid-template-columns:minmax(300px,480px) 1fr;gap:clamp(1.6rem,4vw,4rem);align-items:center;margin-top:clamp(2.2rem,4.5vw,3.6rem);padding-top:clamp(1.8rem,3vw,2.6rem);border-top:1px solid rgba(36,31,27,.16)}
+.hf-card{transform:rotate(-1.5deg);transition:transform .8s ease}
+.hf-card:hover{transform:rotate(0deg) translateY(-6px)}
+.hf-card img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 24px 60px -18px rgba(36,31,27,.38),0 6px 18px rgba(36,31,27,.12)}
+.house-feature.reveal .hf-card{opacity:0;transform:translateY(40px) rotate(0deg) scale(.94);transition:transform .95s cubic-bezier(.34,1.56,.64,1),opacity .6s ease}
+.house-feature.reveal.in .hf-card{opacity:1;transform:translateY(0) rotate(-1.5deg)}
+.house-feature.reveal.in .hf-card:hover{transform:rotate(0deg) translateY(-6px)}
+.hf-copy{display:flex;flex-direction:column;align-items:flex-start;gap:1rem}
+.hf-title{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,4vw,3.2rem);line-height:.9;letter-spacing:-.02em;text-transform:uppercase;color:var(--espresso)}
+.hf-txt{font-family:var(--body);font-size:clamp(.98rem,1.5vw,1.18rem);line-height:1.55;color:rgba(36,31,27,.85);max-width:46ch}
+.hf-txt strong{font-weight:700;color:var(--espresso)}
+@media(max-width:720px){.house-feature{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -409,9 +422,13 @@ footer .credit a:hover{color:var(--green)}
     <div class="bag-fan bag-centre" style="--fx:0;--fy:0px;--fr:-1.5deg;--d:0s"><img src="bag-8.png" alt="Twin Peaks GAHAHE, Burundi" loading="lazy"></div>
   </div>
   <p class="coffee-note">A rotating cast of roasters and single origins. Build your own <a href="#menu">Filter Taster</a> and compare three.</p>
-  <div class="house-pour reveal">
-    <span class="hp-tag">House pour &middot; always on</span>
-    <span class="hp-txt">The one that never rotates &mdash; <strong>House Coffee</strong>, Papua New Guinea (Okapa) &middot; milk chocolate, caramel &amp; hazelnut &middot; washed &middot; our everyday espresso.</span>
+  <div class="house-feature reveal">
+    <div class="hf-card"><img src="bag-5.png" alt="House Coffee &mdash; Papua New Guinea, Okapa. Espresso roast by QPNT." loading="lazy"></div>
+    <div class="hf-copy">
+      <span class="hp-tag">House pour &middot; always on</span>
+      <h3 class="hf-title">The one that<br>never rotates.</h3>
+      <p class="hf-txt">While the fan above changes with the season, <strong>House</strong> stays put &mdash; Papua New Guinea (Okapa), washed &middot; milk chocolate, caramel &amp; hazelnut. Our everyday espresso, every day.</p>
+    </div>
   </div>
 </section>
 
