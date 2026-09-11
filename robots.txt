@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giantcoffee.com.au/sitemap.xml

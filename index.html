@@ -3,8 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GIANT COFFEE · Northbridge, Western Australia</title>
-<meta name="description" content="Small cafe. Giant obsession. Home of the Spanner. Coffee, matcha, bagels and Spanners, hidden down Nicks Lane in Northbridge, Western Australia.">
+<title>Giant Coffee | Coffee, Matcha &amp; Bagels in Northbridge, Perth</title>
+<meta name="description" content="Small cafe. Giant obsession. Home of the Spanner. Specialty coffee, matcha and bagels down Nicks Lane, Northbridge. Open 7 days. Order online for pickup.">
+<link rel="canonical" href="https://giantcoffee.com.au/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Giant Coffee">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://giantcoffee.com.au/">
+<meta property="og:title" content="Giant Coffee | Coffee, Matcha &amp; Bagels in Northbridge, Perth">
+<meta property="og:description" content="Small cafe. Giant obsession. Home of the Spanner. Specialty coffee, matcha, Einspanners and house bagels down Nicks Lane, Northbridge. Open 7 days.">
+<meta property="og:image" content="https://giantcoffee.com.au/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three Einspanners on the green bench outside Giant Coffee, Northbridge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Giant Coffee | Coffee, Matcha &amp; Bagels in Northbridge, Perth">
+<meta name="twitter:description" content="Small cafe. Giant obsession. Home of the Spanner. Specialty coffee, matcha, Einspanners and house bagels down Nicks Lane, Northbridge. Open 7 days.">
+<meta name="twitter:image" content="https://giantcoffee.com.au/og-image.jpg">
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "@id": "https://giantcoffee.com.au/#cafe",
+  "name": "Giant Coffee",
+  "alternateName": "GIANT COFFEE",
+  "url": "https://giantcoffee.com.au/",
+  "image": "https://giantcoffee.com.au/og-image.jpg",
+  "logo": "https://giantcoffee.com.au/elephant.webp",
+  "description": "Small specialty coffee shop down Nicks Lane in Northbridge, Perth. Single origin coffee, matcha, Viennese Einspanners, house bagels and French pastries. Takeaway and pickup.",
+  "telephone": "+61402549473",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop 6A, 109 James Street (enter via Nicks Lane)",
+    "addressLocality": "Northbridge",
+    "addressRegion": "WA",
+    "postalCode": "6003",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -31.9486283,
+    "longitude": 115.8578757
+  },
+  "hasMap": "https://maps.google.com/?cid=10396393534825804538",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "priceRange": "$",
+  "servesCuisine": ["Coffee", "Cafe", "Bagels", "Pastries"],
+  "menu": "https://giantcoffee.com.au/#menu",
+  "acceptsReservations": "False",
+  "currenciesAccepted": "AUD",
+  "areaServed": "Perth, Western Australia",
+  "sameAs": [
+    "https://www.instagram.com/giantcoffee.au",
+    "https://www.broadsheet.com.au/perth/northbridge/cafes/giant-coffee",
+    "https://www.tripadvisor.com/Restaurant_Review-g24075495-d24986941-Reviews-Giant_Coffee-Northbridge_Western_Australia.html",
+    "https://giant-coffee.square.site/"
+  ]
+}
+</script>
 <link rel="icon" id="fav">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +98,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{font-family:var(--body);background:var(--cream);color:var(--espresso);line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .slot{position:relative;background:var(--stone);overflow:hidden;display:flex;align-items:flex-end;border-radius:2px}
 .slot::before{content:"GIANT";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,6vw,4rem);letter-spacing:-.02em;color:rgba(36,31,27,.06);pointer-events:none}
 .slot .shot{position:relative;z-index:1;margin:.85rem;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(36,31,27,.5);background:rgba(245,242,236,.7);padding:.4rem .6rem;border-radius:2px}
@@ -404,7 +479,7 @@ header .nav-right{display:flex;align-items:center;gap:2.2rem}
   </div>
   <div class="hero-foot reveal">
     <div>
-      <p class="place">Northbridge,<br>Western Australia</p>
+      <h1 class="place"><span class="sr-only">Giant Coffee. Specialty coffee, matcha, bagels and Einspanners in </span>Northbridge,<br>Western Australia</h1>
       <p class="sub">Coffee. Matcha. Bagels. Spanners.</p>
     </div>
     <div class="hero-ctas">
@@ -547,9 +622,9 @@ header .nav-right{display:flex;align-items:center;gap:2.2rem}
   <div class="find-grid">
     <h2 class="reveal">Find<br>Us.</h2>
     <div class="detail reveal">
-      <p class="addr">Nicks Lane<br>Northbridge, WA</p>
+      <p class="addr">Nicks Lane<br>Northbridge, WA 6003</p>
       <span class="k">Getting Here</span>
-      <p class="hrs">Tucked down the laneway, a short walk from the ECU city campus.</p>
+      <p class="hrs">Shop 6A, 109 James Street, entered via Nicks Lane. Tucked down the laneway, a short walk from the ECU city campus.</p>
       <span class="k">Opening Hours</span>
       <p class="hrs">Mon &ndash; Fri &nbsp;7am &ndash; 2pm<br>Sat &ndash; Sun &nbsp;9am &ndash; 2pm<br>Closed public holidays</p>
       <span class="k">Skip the wait</span>
@@ -640,7 +715,7 @@ header .nav-right{display:flex;align-items:center;gap:2.2rem}
 <footer>
   <img class="fmark" id="logoFoot" alt="Giant Coffee">
   <div class="finfo">
-    Nicks Lane, Northbridge, WA 6003<br>
+    Shop 6A, 109 James Street (via Nicks Lane), Northbridge, WA 6003 &nbsp;&middot;&nbsp; <span style="white-space:nowrap">Text orders <a href="sms:+61402549473">0402&nbsp;549&nbsp;473</a></span><br>
     Mon &ndash; Fri 7am &ndash; 2pm &nbsp;&middot;&nbsp; Sat &ndash; Sun 9am &ndash; 2pm &nbsp;&middot;&nbsp; Closed public holidays
   </div>
   <a href="https://www.instagram.com/giantcoffee.au" target="_blank" rel="noopener" class="btn btn--green">Instagram <span class="arr">&rarr;</span></a>
